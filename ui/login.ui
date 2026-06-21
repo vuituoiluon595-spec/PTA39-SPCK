@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>889</width>
+    <height>659</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,211 +15,315 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background: #F5F5F5</string>
+    <string notr="true">QMainWindow{
+    background-color: #F8F8F8;
+}
+
+QWidget{
+    background-color: #F8F8F8;
+}
+
+/* Welcome Back */
+QLabel#label{
+    color: #333333;
+    font: 700 24pt &quot;Poppins&quot;;
+}
+
+/* Login with account */
+QLabel#label_lo_account{
+    color: #666666;
+    font: 11pt &quot;Poppins&quot;;
+}
+
+/* Email &amp; Password text */
+QLabel#text_email_phone,
+QLabel#text_prassword{
+    color: #333333;
+    font: 600 10pt &quot;Poppins&quot;;
+}
+
+/* Email và Password Input */
+QLineEdit#email,
+QLineEdit#password{
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    border-radius: 12px;
+    padding-left: 10px;
+    color: #333333;
+    font: 10pt &quot;Poppins&quot;;
+}
+
+QLineEdit#email:focus,
+QLineEdit#password:focus{
+    border: 2px solid #4CAF50;
+}
+
+/* Nút Login */
+QToolButton#login{
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 15px;
+    font: bold 11pt &quot;Poppins&quot;;
+    border: none;
+}
+
+QToolButton#login:hover{
+    background-color: #43A047;
+}
+
+/* Forgot Password */
+QPushButton#forgot_password{
+    background: transparent;
+    color: #4CAF50;
+    border: none;
+    font: 10pt &quot;Poppins&quot;;
+}
+
+QPushButton#forgot_password:hover{
+    color: #43A047;
+    text-decoration: underline;
+}
+
+/* Sign Now */
+QPushButton#nav_signup{
+    background: transparent;
+    color: #4CAF50;
+    border: none;
+    font: bold 10pt &quot;Poppins&quot;;
+}
+
+QPushButton#pushButton:hover{
+    color: #43A047;
+}
+
+/* Đường kẻ */
+QFrame#line{
+    color: #D9D9D9;
+}
+</string>
    </property>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>100</y>
-      <width>47</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>801</width>
-      <height>601</height>
-     </rect>
-    </property>
-    <widget class="QLabel" name="logo">
-     <property name="geometry">
-      <rect>
-       <x>340</x>
-       <y>60</y>
-       <width>61</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>24</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>logo</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>110</y>
-       <width>281</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Arial</family>
-       <pointsize>27</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>wekcome Back!</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="text_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>260</y>
-       <width>221</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Arial</family>
-       <pointsize>15</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Email or Phonemunber</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="text">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>340</y>
-       <width>221</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Arial</family>
-       <pointsize>15</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>prassword</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>190</y>
-       <width>221</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Arial</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>login with account</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="email_phonemunber">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>290</y>
-       <width>791</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QToolButton" name="toolButton">
-     <property name="geometry">
-      <rect>
-       <x>320</x>
-       <y>440</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>login</string>
-     </property>
-    </widget>
-    <widget class="Line" name="line">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>490</y>
-       <width>731</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QWidget" name="horizontalLayoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>510</y>
-       <width>791</width>
-       <height>80</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QLabel" name="label_4">
-        <property name="text">
-         <string>don`t have an account ?</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>sigin now</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QLineEdit" name="email_phonemunber_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>370</y>
-       <width>791</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>871</width>
+        <height>641</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>871</width>
+        <height>641</height>
+       </size>
+      </property>
+      <widget class="QLabel" name="logo">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>-10</y>
+         <width>281</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="pixmap">
+        <pixmap>../accets/imgs/img1.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lab_wellcome_back">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>190</y>
+         <width>281</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>27</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>wellcome Back!</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="text_email_phone">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>290</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Email or Phonemunber</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="text_prassword">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>390</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>prassword</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_logi_with_account">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>250</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>login with account</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="login">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>480</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>login</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>530</y>
+         <width>871</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>550</y>
+         <width>871</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="nav_signup">
+          <property name="text">
+           <string>sigin now</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>don`t have an account ?</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLineEdit" name="email">
+       <property name="geometry">
+        <rect>
+         <x>-8</x>
+         <y>330</y>
+         <width>881</width>
+         <height>40</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="password">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>420</y>
+         <width>871</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="forgot_password">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>600</y>
+         <width>141</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>forgot password ?</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

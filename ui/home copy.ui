@@ -191,7 +191,7 @@
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>-10</y>
+      <y>0</y>
       <width>891</width>
       <height>950</height>
      </rect>
@@ -208,57 +208,6 @@
       <height>651</height>
      </size>
     </property>
-    <widget class="QWidget" name="widget_3" native="true">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>40</y>
-       <width>801</width>
-       <height>351</height>
-      </rect>
-     </property>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>231</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>18</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Các Món ăn Đề Xuất</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="widget_4" native="true">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>440</y>
-       <width>801</width>
-       <height>291</height>
-      </rect>
-     </property>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>47</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </widget>
    </widget>
   </widget>
  </widget>
