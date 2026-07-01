@@ -13,18 +13,225 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>21</height>
-    </rect>
-   </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-30</y>
+      <width>161</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>121</width>
+      <height>651</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>161</width>
+      <height>741</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#B3A472</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">text-align: left;</string>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../accets/icon/icons8-home-50.png</normaloff>../accets/icon/icons8-home-50.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">text-align: left;</string>
+       </property>
+       <property name="text">
+        <string>search for food</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../accets/icon/icons8-search-50.png</normaloff>../accets/icon/icons8-search-50.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="styleSheet">
+        <string notr="true">text-align: left;</string>
+       </property>
+       <property name="text">
+        <string>favorites list</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../accets/icon/icons8-book-50 (1).png</normaloff>../accets/icon/icons8-book-50 (1).png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="styleSheet">
+        <string notr="true">text-align: left;</string>
+       </property>
+       <property name="text">
+        <string>add new recipe</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../accets/icon/icons8-plus-50.png</normaloff>../accets/icon/icons8-plus-50.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="styleSheet">
+        <string notr="true">text-align: left;</string>
+       </property>
+       <property name="text">
+        <string>Account</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../accets/icon/icons8-account-50.png</normaloff>../accets/icon/icons8-account-50.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>0</y>
+      <width>641</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>641</width>
+      <height>581</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>641</width>
+      <height>581</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#D6BF78</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>90</y>
+       <width>171</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>36</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../accets/icon/icons8-account-50.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fullname">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>230</y>
+       <width>211</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Tên: Họ và tên</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="info">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>300</y>
+       <width>211</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>phần mô tả hoặc tiểu sử account </string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="logout">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>540</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Log out</string>
+     </property>
+    </widget>
+   </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

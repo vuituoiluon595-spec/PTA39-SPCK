@@ -26,6 +26,24 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: rgb(245,245,245);
+    border: none;
+    border-radius: 15px;
+    color: rgb(50,50,50);
+    padding: 8px;
+}
+
+QPushButton:hover{
+    background-color: rgb(255,255,255);   /* Trắng sáng hơn */
+    color: black;
+}
+
+QPushButton:pressed{
+    background-color: rgb(230,230,230);
+}</string>
+   </property>
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>

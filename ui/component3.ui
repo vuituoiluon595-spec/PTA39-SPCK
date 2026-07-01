@@ -38,7 +38,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>D:/SPCK/PTA39-SPCK/B10/accets/imgs/images.jpg</pixmap>
+      <pixmap>../accets/imgs/images.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
