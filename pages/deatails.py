@@ -39,10 +39,13 @@ class DetailsPage(QMainWindow):
         self.close()
 
     def open_search(self):
+        from pages.home import DANH_SACH_MON_AN   # lấy danh sách món ăn
+
         self.search = SreachPage(
             self.main_window,
             self.root_dir,
-            self.cur_acc
+            self.cur_acc,
+            DANH_SACH_MON_AN
         )
         self.close()
 

@@ -247,7 +247,7 @@ border-radius: 15px;</string>
           <number>9</number>
          </property>
          <item>
-          <widget class="QTextEdit" name="textEdit_2">
+          <widget class="QTextEdit" name="search_input">
            <property name="styleSheet">
             <string notr="true">color: #0B090A;
 font: 12pt &quot;Segoe UI&quot;;</string>
@@ -269,7 +269,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
             <string notr="true"/>
            </property>
            <property name="pixmap">
-            <pixmap>C:/Users/Admin/Documents/app_producer_advanced/PetAdoptionApp/img/icons8-search-64.png</pixmap>
+            <pixmap>../../../../../Admin/Documents/app_producer_advanced/PetAdoptionApp/img/icons8-search-64.png</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>

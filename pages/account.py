@@ -15,6 +15,15 @@ class AccountPage(QMainWindow):
         ui_path = self.root_dir + "/ui/account.ui"
         uic.loadUi(ui_path, self)
 
+        # --- Hiển thị thông tin tài khoản đang đăng nhập ---
+        # cur_acc là 1 dictionary, ví dụ:
+        #   {"fullname": "Hai Nam", "email": "abc@gmail.com", ...}
+        # .get(key, "") nghĩa là: lấy giá trị theo key,
+        # nếu không có thì trả về chuỗi rỗng "" (tránh bị lỗi).
+        self.fullname.setText("Tên: " + self.cur_acc.get("fullname", ""))
+        # Phần info chỉ hiển thị email (sẽ nâng cấp thêm sau)
+        self.info.setText("Email: " + self.cur_acc.get("email", ""))
+
         # Home
         self.pushButton.clicked.connect(self.open_home)
 
@@ -47,11 +56,13 @@ class AccountPage(QMainWindow):
     # ==========================
     def open_search(self):
         from pages.search import SreachPage
+        from pages.home import DANH_SACH_MON_AN   # lấy danh sách món ăn
 
         self.search = SreachPage(
             self.main_window,
             self.root_dir,
-            self.cur_acc
+            self.cur_acc,
+            DANH_SACH_MON_AN
         )
         self.close()
 
